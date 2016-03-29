@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+
+<meta charset="UTF-8">
+<title>Broadcasting Messages through WebSockets</title>
+
+<link href="css/bootstrap.css" rel="stylesheet">
+<style type="text/css">
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+</style>
+<link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+</head>
+
+<body>
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<button type="button" class="btn btn-navbar" data-toggle="collapse"
+					data-target=".nav-collapse">
+					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="brand" href="#">Postal</a>
+				<div class="nav-collapse collapse">
+					<ul class="nav">
+						<li><a href="index.html">Broadcast</a></li>
+						<li class="active"><a href="postal.html">Postal</a></li>
+						<li><a href="echo.html">Echo</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="main" class="container">
+		<div class="row">
+			<div class="span4">
+				<h2>Send Message</h2>
+				<textarea rows="10" cols="100" id="inputMessage"></textarea>
+				<button type="submit" class="btn btn-success" id="messageSubmit">Send</button>
+			</div>
+			<div class="span4">
+				<h2>Local Messages</h2>
+				<textarea rows="10" cols="100" id="localMessage"></textarea>
+			</div>
+			<div class="span4">
+				<h2>Incoming Messages</h2>
+				<textarea rows="10" cols="100" id="outputMessage"></textarea>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/lodash.js"></script>
+	<script type="text/javascript" src="js/postal.js"></script>
+	<script type="text/javascript" src="js/app_postal.js"></script>
+
+</body>
+
+</html>
